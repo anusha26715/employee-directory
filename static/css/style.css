@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --color-main:rgb(69, 67, 67);
+    --color-white:white;
+    --color-display-bg:rgba(222, 219, 219,0.4);
+}
+
+.app-container{
+    width: 100%;
+}
+
+/* header css start*/
+
+.app-container>header{
+    width: 100%;
+    background-color: var(--color-main);
+    padding: 10px clamp(30px,5%,50px) 26px;
+}
+
+.app-container nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.head-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-input>a{
+    text-decoration: none;
+    margin-top: 26px;
+}
+
+.head-input>a>h1{
+    font-size: 170%;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.input-container{
+    width: 50%;
+    margin-top: 16px;
+}
+
+.input-container>input{
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn-container{
+    margin-top: 16px;
+}
+
+/* header css end*/
+
+/* head-section css start */
+.head-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px clamp(30px,5%,50px);
+    background-color:var(--color-white);
+}
+
+.show-sort-cntr{
+    display: flex;
+}
+
+
+/* display section css start */
+
+.display-section {
+    padding: 20px clamp(30px,5%,50px);
+    width: 100%;
+    background-color: var(--color-display-bg);
+}
+
+.container{
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.display-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card-wrapper{
+    background-color: var(--color-white);
+    box-shadow: 0 0 5px gray;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-wrapper p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.card-wrapper>h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-container>footer{
+    width: 100%;
+    background-color: var(--color-main);
+    padding: 26px clamp(30px,5%,50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.add-form label{
+    padding:12px 0 5px;
+    font-weight: bold;
+}
+
+
+
+.filter-cntr label{
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+.filter-cntr input{
+    padding: 5px;
+}
+
+.offcanvas-title{
+    font-weight: bold;
+}
+
+.filter-btn-ctnr{
+    padding-top: 15px;
+}
+
+
+
+@media (max-width:768px){
+    .head-input>a>h1{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px){
+    .head-input{
+        width: 90%;
+    }
+}
+
+/* Add these styles to your CSS file */
+.pagination-section {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow-x: auto;
+    max-width: 100vw;
+    padding-bottom: 0.5rem;
+  }
+
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    overflow-x: auto;
+    max-width: 70vw;
+    /* Hide scrollbar for Webkit browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+  .page-numbers::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* On very small screens, reduce button size and spacing */
+@media (max-width: 576px) {
+    .pagination-section {
+      padding: 0.5rem 0;
+    }
+    .pagination-controls {
+      gap: 0.25rem;
+      max-width: 100vw;
+    }
+    .page-numbers {
+      gap: 0.1rem;
+      max-width: 60vw;
+    }
+    .pagination-info {
+      font-size: 0.8rem;
+    }
+    .pagination-controls .btn,
+    .page-numbers .btn {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
