@@ -173,6 +173,16 @@ This project is designed to work as a front-end-only app for easy deployment (e.
 GitHub Pages and similar static hosts cannot process Freemarker templates. This approach allows you to demonstrate both front-end skills and understanding of server-side templating.
 
 
+## Freemarker & Java: My Approach and Willingness to Learn
+
+I have not previously worked with Java or Freemarker templates, but I have researched their purpose and usage for this assignment. I understand that Freemarker is a server-side template engine commonly used with Java to inject data into HTML templates before sending them to the browser.
+
+For this project, I have:
+- Provided Freemarker template examples in the `templates/` folder to demonstrate my understanding of how data would be rendered server-side.
+- Simulated Freemarker’s data injection using JavaScript arrays and DOM manipulation, as a stand-in for server-side rendering.
+
+**If given the opportunity, I am confident I can quickly learn and implement Freemarker and Java, as I have demonstrated the ability to research and adapt to new technologies.**
+
 
 
 

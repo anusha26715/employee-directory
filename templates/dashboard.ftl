@@ -1,4 +1,8 @@
-<!-- templates/dashboard.ftl -->
+<#-- 
+  This Freemarker template would be used by a Java backend to render the employee list.
+  The 'employees' variable would be passed from the server, and the template would iterate
+  over each employee to generate the HTML for the dashboard.
+-->
 <div id="employee-list-container">
   <#list employees as employee>
     <div class="employee-card" data-employee-id="${employee.id}">
