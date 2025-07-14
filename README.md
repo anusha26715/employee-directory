@@ -161,6 +161,16 @@ This project is created for educational purposes as part of a web development as
 ---
 
 **Developed using HTML5, CSS3, JavaScript, and Bootstrap 5**
+## Freemarker Integration (Simulated)
+
+This project is designed to work as a front-end-only app for easy deployment (e.g., GitHub Pages).  
+**Freemarker templates** are provided in the `templates/` folder to demonstrate how server-side rendering would work in a Java environment.
+
+- In a real Java backend, employee data would be injected into the template using Freemarker, as shown in `dashboard.ftl`.
+- For this project, data is loaded from a JavaScript file (`static/js/data.js`) and rendered dynamically in the browser using JavaScript, simulating Freemarker’s output.
+
+**Why?**  
+GitHub Pages and similar static hosts cannot process Freemarker templates. This approach allows you to demonstrate both front-end skills and understanding of server-side templating.
 
 
 
